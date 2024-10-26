@@ -1,0 +1,333 @@
+## Взял шаблон с https://github.com/github/gitignore/blob/main/Python.gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+## папка со скомпилированным байт-кодом
+*.py[cod]
+## файлы байт-кода (квадратные скобки предназначены для сопоставления любого из символов, поэтому он соответствует .pyc,
+## .pyo и .pyd)
+*$py.class
+## файлы, создаваемые при первом импорте модулей Jython (Jython — это реализация языка Python на языке Java)
+
+# C extensions
+*.so
+## .so — динамически подключаемые библиотеки (необходима всякий раз, когда вы запускаете exe-файл ???)
+
+# Distribution / packaging
+.Python
+## скрытый каталог/файл, начинающийся с точки, обычно созданный системами сборки или инструментами упаковки
+build/
+## место, куда пакеты распаковываются и откуда собираются. Когда пакет установлен успешно, pip удаляет распакованный
+## каталог из build
+develop-eggs/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+## папка и файлы, связанные с Extensible Gateway Interface («eggs») - автономный формат распространения
+## для пакетов Python
+dist/
+## скомпилированный код/библиотека
+sdist/
+## формат файла исходного дистрибутива, содержащий исходные файлы пакета
+downloads/
+## папка для автоматически организованных загрузок?
+lib/
+lib64/
+## содержат установленные библиотеки Python
+parts/
+## минимальная библиотека, позволяющая выполнять секционирование итерируемых объектов в сжатой форме???
+var/
+## хранит информацию о состоянии, которая включает постоянные данные, которые программы изменяют по мере выполнения
+wheels/
+share/python-wheels/
+## wheel — это стандартный способ упаковки и распространения файлов, необходимых для запуска приложения Python
+.installed.cfg
+## файлы конфигурации для определения метаданных пакета (установленных пакетов?)
+MANIFEST
+## файл нужен для того, чтобы указывать, какие файлы следует включить в сборку пакета
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+## эти файлы пишутся скриптом Python из шаблона до того, как PyInstaller создаст exe-файл, чтобы добавить в него дату
+## и другую информацию
+*.manifest
+*.spec
+
+# Installer logs
+## логи pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+## отчеты о модульном тестировании / покрытии
+htmlcov/
+## выходной каталог отчетов pytest в формате HTML
+.tox/
+## tox— это универсальный инструмент командной строки для управления и тестирования virtualenv
+.nox/
+## nox это инструмент командной строки, который автоматизирует тестирование в нескольких средах Python, похожий на tox 
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+cover/
+## Coverage.py — это инструмент для измерения покрытия кода программ Python.
+.cache
+.pytest_cache/
+## временное пространство, из которого данные можно считывать или записывать с очень высокой скоростью
+nosetests.xml
+## nose расширяет unittest, чтобы упростить тестирование
+.hypothesis/
+## Hypothesis — это библиотека Python для создания модульных тестов
+
+# Translations
+*.mo
+## Machine Object — это двоичный файл данных, содержащий объектные данные, на которые ссылается программа. 
+## Используется для перевода программного кода и может быть загружен или импортирован в программу GNU gettext.
+*.pot
+## файлы POT (портативный шаблон объекта) и PO (портативный объект) составляют текстовую файловую систему, 
+## которая обычно используется для локализации и принимается многими поставщиками услуг перевода
+
+# Django stuff:
+*.log
+## файлы логгирования Django
+local_settings.py
+## local_settings переопределяет настройки, специфичные для локальной среды, особенно DATABASES, SECRET_KEY,
+## ALLOWED_HOSTS и DEBUG переменные
+db.sqlite3
+db.sqlite3-journal
+## файл базы данных SQLite и журнала, который отслеживает каждую транзакцию в базе данных
+
+# Flask stuff:
+instance/
+## папка экземпляра является подкаталогом корня репозитория и содержит файл конфигурации, 
+## специально предназначенный для этого экземпляра приложения, который не стоит передавать в систему контроля версий
+.webassets-cache
+## webassets библиотека кэширует, используя местоположение по умолчанию, папку .webassets-cache внутри каталога
+
+# Scrapy stuff:
+.scrapy
+## Scrapy предоставляет повторно используемые конвейеры элементов для загрузки файлов, прикрепленных
+## к определенному элементу
+
+# Sphinx documentation
+## Sphinx — это генератор документации или инструмент, который переводит набор исходных текстовых файлов 
+## в различные выходные форматы, автоматически создавая перекрестные ссылки, индексы и т. д.
+docs/_build/
+## путь к каталогу сборки для выходных данных sphinx?
+
+# PyBuilder
+## PyBuilder — это инструмент автоматизации сборки программного обеспечения, написанный на чистом Python
+.pybuilder/
+target/
+
+# Jupyter Notebook
+## Jupyter — интерактивный блокнот, первоначально являвшийся веб-реализацией и развитием IPython
+.ipynb_checkpoints
+## Jupyter создает файл контрольной точки каждый раз, когда вы создаете .ipynb файл, 
+## а затем обновляет файл контрольной точки каждый раз, когда вы вручную сохраняете свой прогресс
+## для начального файла .ipynb.
+
+# IPython
+## IPython — интерактивная оболочка для языка программирования Python
+profile_default/
+ipython_config.py
+## если вы не укажете имя профиля, файлы будут созданы для default профиля. 
+## Обычно они находятся в ~/.ipython/profile_default/, и называются ipython_config.py
+
+# pyenv
+## pyenv — это инструмент, который позволяет управлять несколькими версиями Python.
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+##  Для библиотеки или пакета вы можете проигнорировать эти файлы, поскольку код
+##  предназначен для запуска в нескольких средах; в противном случае проверьте их в:
+# .python-version
+
+# pipenv
+## Pipenv — это менеджер зависимостей для Python-проектов.
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+##  Согласно pypa/pipenv#598, рекомендуется включить Pipfile.lock в систему управления версиями.
+##  Однако в случае совместной работы, если есть платформенно-специфичные зависимости или зависимости
+##  без кроссплатформенной поддержки, pipenv может установить зависимости, которые не работают, или не
+##  установить все необходимые зависимости.
+#Pipfile.lock
+
+# poetry
+## Poetry - это инструмент для управления зависимостями в Python проектах (аналог встроенного pip)
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+##  Подобно Pipfile.lock, обычно рекомендуется включать poetry.lock в систему контроля версий.
+##  Это особенно рекомендуется для бинарных пакетов, чтобы обеспечить воспроизводимость, и чаще
+##  игнорируется для библиотек.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+## PDM представляет собой современный менеджер пакетов и зависимостей Python, поддерживающий новейшие стандарты PEP.
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+##  Как и Pipfile.lock, обычно рекомендуется включать pdm.lock в систему контроля версий.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+##  pdm хранит конфигурации всего проекта в .pdm.toml, но рекомендуется не включать его 
+##  в контроль версий.
+#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+## В PEP 582 говорится: Проекты, использующие систему управления исходным кодом, 
+## могут включать каталог __pypackages__ (пустой или содержащий, например, файл .gitignore ).
+
+# Celery stuff
+## Celery – это асинхронная распределенная очередь задач, написанная на Python
+celerybeat-schedule
+celerybeat.pid
+## Celery Beat - это планировщик и он запускает задачи с установленными интервалами
+
+# SageMath parsed files
+## Sage — система компьютерной алгебры, покрывающая много областей математики
+*.sage.py
+
+# Environments
+.env
+.venv
+## в файлах прописывают переменные окружения ???
+env/
+venv/
+ENV/
+## каталог содержащий копию интерпретатора Python ???
+env.bak/
+venv.bak/
+## ".bak" — расширение имени файла, обычно используемое для обозначения резервной копии файла
+
+# Spyder project settings
+## Spyder — свободная и кроссплатформенная интерактивная IDE для научных расчетов на языке Python
+.spyderproject
+.spyproject
+
+# Rope project settings
+## Rope — библиотека рефакторинга Python с открытым исходным кодом
+.ropeproject
+
+# mkdocs documentation
+## MkDocs — генератор статических сайтов, предназначенный для создания проектной документации
+/site
+
+# mypy
+## Mypy — это статический проверяющий инструмент, который находит ошибки в ваших программах, даже не запуская их
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+## Pyre — это производительный инструмент проверки типов для Python, соответствующий PEP 484.
+.pyre/
+
+# pytype static type analyzer
+## Pytype проверяет и выводит типы для вашего кода Python — без необходимости аннотаций типов
+.pytype/
+
+# Cython debug symbols
+## Cython — язык программирования, упрощающий написание модулей С/C++ кода для Python
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+## Шаблон, специфичный для JetBrains, хранится в отдельном JetBrains.gitignore, который можно
+## найти по адресу https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+## и можно добавить в глобальный gitignore или объединить с этим файлом. Для более
+## ядерного варианта (не рекомендуется) вы можете раскомментировать следующее, чтобы игнорировать всю папку idea.
+#.idea/
+
+## я пользуюсь PyCharm - решил прислушаться к их рекомендациям:
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# SonarLint plugin
+.idea/sonarlint/
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
